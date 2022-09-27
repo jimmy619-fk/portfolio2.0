@@ -15,19 +15,21 @@ export default function About({ pageInfo }: Props) {
         '>
 
             <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl '>About</h3>
-            <motion.div className='relative rounded-full  md:mb-0 flex-shrink-0 w-56 h-56  md:w-64 md:h-96  xl:w-[400px] xl:h-[500px] '
-                initial={{
-                    x: -300,
-                    opacity: 0,
-                }}
-                whileInView={{ x: 0, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{
-                    duration: 1
-                }}
+            <motion.div
+
 
             >
-                <Image src={urlFor(pageInfo?.profilePic).url()} layout="fill" objectFit="contain" className='rounded-full md:rounded-lg'
+                <motion.img
+                    initial={{
+                        x: -300,
+                        opacity: 0,
+                    }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{
+                        duration: 1
+                    }}
+                    className='relative   md:mb-0 flex-shrink-0     ' src={urlFor(pageInfo?.profilePic).url()}
                 />
 
             </motion.div>

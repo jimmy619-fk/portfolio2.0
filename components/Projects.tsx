@@ -40,7 +40,7 @@ function Projects({ projects }: Props) {
                                 src={urlFor(project?.image).url()} alt="" className='h-28 object-contain  ' />
                             <div className='max-w-7xl  md:px-10 px-0 space-y-10'>
                                 <h4 className='text-2xl  font-semibold text-center'><span className='underline decoration-[#F7ABBA]/50'>Project study {i + 1} of {projects.length}:</span> {project?.title}</h4>
-                                <p className='flex justify-center  ' ><span className='text-red-400 font-bold' >Visit Project:&nbsp; </span>{project.linktobuild}</p>
+                                <p className='flex justify-center  ' ><span className='text-red-400 font-bold' >Visit Project: </span>{project.linktobuild}</p>
                                 <div className='flex items-center space-x-2 justify-center'>
 
                                     {
